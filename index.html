@@ -7,28 +7,94 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-
-        <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh">
-            <div class="card">
-          <div class="card w-100">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh">
+        <div class="card w-100">
             <h5 class="card-title bg-gray p-3 border-bottom pb-3">Payment form example</h5>
             <div class="card-body">
                 <div class="alert alert-danger" role="alert">
                     Some fields are missing
-                  </div>
-                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   <div class="d-flex justify-content-end">
-                    <a href="#" class="btn btn-secondary mx-2">Cancel</a>
-                    <div class=""></div>
-                    <a href="#" class="btn btn-primary">Send</a>
                 </div>
+
+                <form>
+                    <div class="mb-3 d-flex justify-content-between">
+                        <div class="w-50 pr-2">
+                            <label for="cardName" class="form-label"><strong>Card #</strong></label>
+                            <input type="text" class="form-control" id="cardName" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+
+                        <div class="w-30 pr-2 ms-3">
+                            <label for="cvcNumber" class="form-label"><strong>CVC#</strong></label>
+                            <input type="text" class="form-control" id="cvcNumber" placeholder="0000">
+                        </div>
+
+                        <div class="w-20 pr-2 ms-3">
+                            <label for="amount" class="form-label"><strong>Amount</strong></label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" id="amount" placeholder="Amount">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="mb-3 d-flex justify-content-between">
+                        <div class="w-50 pr-2">
+                            <label for="cardName2" class="form-label"><strong>First Name</strong></label>
+                            <input type="text" class="form-control" id="cardName2" placeholder="">
+                        </div>
+
+                        <div class="w-50 pr-2 ms-3">
+                            <label for="cardName3" class="form-label"><strong>Last Name</strong></label>
+                            <input type="text" class="form-control" id="cardName3" placeholder="">
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                  <div class="mb-3 d-flex justify-content-between">
+                      <div class="w-100 pr-2">
+                          <label for="cardName2" class="form-label"><strong>City</strong></label>
+                          <input type="text" class="form-control" id="cardName2" placeholder="">
+                      </div>
+
+                      <div class="w-50 ms-3">
+                        <label for="stateSelect" class="form-label"><strong>State</strong></label>
+                        <select class="form-select" id="stateSelect" aria-label="Select a state">
+                            <option selected>Pick a State</option>
+                            <option value="1">Washington</option>
+                            <option value="2">Utah</option>
+                            <option value="4">Georgia</option>
+                            <option value="5">Texas</option>
+                            <option value="6">Florida</option>
+                            <option value="7">Alabama</option>
+                        </select>
+                    </div>
+
+                    <div class="w-50 pr-2 ms-3">
+                      <label for="cardName2" class="form-label"><strong>Postal Code</strong></label>
+                      <input type="text" class="form-control" id="cardName2" placeholder="">
+                  </div>
+
+                  </div>
+              </form>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <a href="#" class="btn btn-secondary mx-2">Cancel</a>
+                  <a href="#" class="btn btn-primary">Send</a>
+              </div>
             </div>
-          </div>
         </div>
-
     </div>
+</div>
+  
 
+
+          </div>
+      </div>
+  </div>
+  </div>
 
 
 
